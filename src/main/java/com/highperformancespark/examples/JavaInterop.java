@@ -32,6 +32,7 @@ public class JavaInterop {
     // with generic or templated code where we can't explicitly construct the correct
     // class tag as using fake class tags may result in degraded performance.
     ClassTag<Object> fake = ClassTag$.MODULE$.AnyRef();
+    wning
     return new JavaPairRDD(rdd, fake, fake);
   }
   //end::fakeClassTag[]
